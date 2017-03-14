@@ -10,7 +10,7 @@
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
-                <form class="form-horizontal">
+                <form class="form-horizontal" action="<?php echo base_url();?>login/validate_credentials" method="POST">
                   <div class="box-body">
                     <div class="form-group">
                       <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -45,6 +45,5 @@
                 </form>
               </div>
               <!-- /.box -->
-              <?php print_r($records) ?>
   </body>
 </html>
