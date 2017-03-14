@@ -45,6 +45,6 @@
                 </form>
               </div>
               <!-- /.box -->
-              <?php print_r($records)?>
+              <?php print_r($records) ?>
   </body>
 </html>
