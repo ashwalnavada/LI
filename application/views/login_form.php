@@ -1,49 +1,25 @@
-<html>
-  <head>
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../bootstrap/css/font-awesome.min.css">
-  </head>
-  <body>
-    <h3 class="box-title">Hey buddy, login here!!!</h3>
-                </div>
-                <!-- /.box-header -->
-                <!-- form start -->
-                <form class="form-horizontal" action="<?php echo base_url();?>login/validate_credentials" method="POST">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+<!--<div id="login_form">
+  <h3>Enter your login details:</h3>
+  <form action="<?php /*echo base_url(); ?>login/validate_credentials" method="POST">
+  <br>First name:<input type="text" name="fname"><br>
+  Password:<input type="password" name="password"><br>
+  <input type="submit" value="submit">
+  <input type="reset" value="reset"><br>
+  Not registered? <a href="<?php echo base_url(); */?>login/signup"> Signup here </a>
+  </form>
+  
+</div>-->
+<div id="login_form">
+  <h1>Hello there, login!</h1>
+  <?php
+    echo form_open('login/validate_credentials');
+    echo form_input('fname','First Name');
+    echo form_password('password','password');
+    echo form_submit('submit','Login');
+    echo anchor('login/signup','Create Account');
 
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+  ?>
 
-                      <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.box-body -->
-                  <div class="box-footer">
-                    <button type="submit" class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-info pull-right">Sign in</button>
-                  </div>
-                  <!-- /.box-footer -->
-                </form>
-              </div>
-              <!-- /.box -->
-  </body>
-</html>
+</div>
+
+
