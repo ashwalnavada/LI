@@ -5,7 +5,7 @@
   Password:<input type="password" name="password"><br>
   <input type="submit" value="submit">
   <input type="reset" value="reset"><br>
-  Not registered? <a href="<?php echo base_url(); */?>login/signup"> Signup here </a>
+  Not registered? <a href="<?php echo base_url(); */?>login/signup"> Signup here to create an account</a> 
   </form>
   
 </div>-->
