@@ -20,6 +20,7 @@ class Login extends CI_Controller
 					'fname' => $this->input->post('fname'),
 					'is_logged_in' => true
 				);
+			$this->load->library('session');
 			$this->session->set_userdata($data);
 			redirect('site/members_area');
 		}
