@@ -7,6 +7,7 @@ class Login extends CI_Controller
 	{
 		$data['main_content'] = 'login_form';
 		$this->load->view('includes/template', $data);
+
 	}
 
 	function validate_credentials()
@@ -20,7 +21,7 @@ class Login extends CI_Controller
 					'fname' => $this->input->post('fname'),
 					'is_logged_in' => true
 				);
-			$this->load->library('session');
+			$this->load->library('Session');
 			$this->session->set_userdata($data);
 			redirect('site/members_area');
 		}
