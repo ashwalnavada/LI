@@ -15,7 +15,7 @@ class Login extends CI_Controller
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
 
-		if($query) // if user's credentials validated
+		if($query) // checking if user's credentials validated
 		{
 			$data = array(
 					'fname' => $this->input->post('fname'),
