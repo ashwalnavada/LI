@@ -32,7 +32,7 @@ class Login extends CI_Controller
 		}
 	}
 
-	function signup()
+	function signup() //Registration for new users
 	{
 		$data['main_content']='signup_view';
 		$this->load->view("includes/template",$data);
