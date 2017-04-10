@@ -4,7 +4,7 @@
 class Membership_model extends CI_Model
 {
 	
-	function validate() // Validating credentials
+	function validate() // Validating credentials for users
 	{
 		$this->db->where('fname', $this->input->post('fname'));
 		$this->db->where('password', md5($this->input->post('password')));
