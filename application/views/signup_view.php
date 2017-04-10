@@ -1,5 +1,5 @@
 
-	<h3>Enter your details to register:</h3>
+	<h3>Enter your details to register:</h3> <!--For new Users-->
 	<form action="" method="POST">
 	<br>First Name:<input type="text" name="fname">
 	<br>Last Name:<input type="text" name="lname">
