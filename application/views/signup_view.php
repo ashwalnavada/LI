@@ -1,6 +1,6 @@
 
 	<h3>Enter your details to register:</h3> <!--For new Users-->
-	<form action="" method="POST">
+	<form action="" method="POST"><!--form open-->
 	<br>First Name:<input type="text" name="fname">
 	<br>Last Name:<input type="text" name="lname">
 	<br>E-mail:<input type="email" name="email">
