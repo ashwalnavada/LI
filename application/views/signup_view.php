@@ -12,7 +12,6 @@
 		<option value="CSE"> CSE</option>
 		<option value="ISE"> ISE</option>
 		<option value="ME"> ME</option>
-		<option value="CE"> CE</option>
 	</select>
 	<br>Known Laguages:<input type="checkbox" name="laguage" value="C">C
 					<input type="checkbox" name="laguage" value="C++">C++
